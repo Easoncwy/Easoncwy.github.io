@@ -108,24 +108,27 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="keywords" content="数据结构与算法,排序算法,二叉树">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/08/24/hello-world/index.html">
+<meta property="og:title" content="常用排序算法之堆排序">
+<meta property="og:url" content="http://yoursite.com/2017/05/15/常用排序算法之堆排序/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-24T06:14:31.008Z">
+<meta property="og:image" content="http://7xl5dr.com1.z0.glb.clouddn.com/Aerial02.jpg">
+<meta property="og:image" content="http://7xl5dr.com1.z0.glb.clouddn.com/Sorting_heapsort_anim.gif">
+<meta property="og:image" content="http://7xl5dr.com1.z0.glb.clouddn.com/full%C2%A0binary%C2%A0tree.png">
+<meta property="og:image" content="http://7xl5dr.com1.z0.glb.clouddn.com/complete%C2%A0binary%C2%A0tree.png">
+<meta property="og:updated_time" content="2017-05-29T15:14:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="常用排序算法之堆排序">
+<meta name="twitter:image" content="http://7xl5dr.com1.z0.glb.clouddn.com/Aerial02.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/24/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/15/常用排序算法之堆排序/"/>
 
 
 
@@ -135,7 +138,7 @@
   };
 </script>
 
-  <title>Hello World | Hexo</title>
+  <title>常用排序算法之堆排序 | Hexo</title>
   
 
 
@@ -280,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/24/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/15/常用排序算法之堆排序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -297,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">常用排序算法之堆排序
               
             
           </h1>
@@ -322,12 +325,46 @@
                 
               
 
-              <time title="Created: 2018-08-24 14:14:31" itemprop="dateCreated datePublished" datetime="2018-08-24T14:14:31+08:00">2018-08-24</time>
+              <time title="Created: 2017-05-15 17:55:28" itemprop="dateCreated datePublished" datetime="2017-05-15T17:55:28+08:00">2017-05-15</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2017-05-29 23:14:11" itemprop="dateModified" datetime="2017-05-29T23:14:11+08:00">2017-05-29</time>
+              
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构与算法/" itemprop="url" rel="index"><span itemprop="name">数据结构与算法</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -356,15 +393,15 @@
       
 
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p><img src="http://7xl5dr.com1.z0.glb.clouddn.com/Aerial02.jpg" alt=""><br><a id="more"></a><br><img src="http://7xl5dr.com1.z0.glb.clouddn.com/Sorting_heapsort_anim.gif" alt=""></p>
+<h2 id="堆排序介绍"><a href="#堆排序介绍" class="headerlink" title="堆排序介绍"></a>堆排序介绍</h2><p>堆排序(Heap Sort)是指利用堆这种数据结构所设计的一种排序算法。(维基百科)<br>堆(heap)又被称为优先队列(priority queue)。尽管名为优先队列，但堆并不是队列。在堆中，不是按照元素进入队列的先后顺序取出元素的，而是按照元素的优先级取出元素。<br>    这就好像候机的时候，无论谁先到达候机厅，总是头等舱的乘客先登机，然后是商务舱，最后是经济舱。每个乘客都有头等舱、商务舱、经济舱三种键(key)中的一个。优先级按头等舱&gt;商务舱&gt;经济舱的顺序从高到低排列。</p>
+<h2 id="先说说二叉树"><a href="#先说说二叉树" class="headerlink" title="先说说二叉树"></a>先说说二叉树</h2><p>在计算机科学中，二叉树是每个节点最多有两个子树的树结构。通常子树被称作“左子树”（left subtree）和“右子树”（right subtree）。二叉树常被用于实现二叉查找树和二叉堆。<br>树和二叉树的三个主要差别：<br>树的结点个数至少为 1，而二叉树的结点个数可以为 0<br>树中结点的最大度数没有限制，而二叉树结点的最大度数为 2<br>树的结点无左、右之分，而二叉树的结点有左、右之分</p>
+<p>二叉树又分为完全二叉树（complete binary tree）和满二叉树（full binary tree）<br>满二叉树：一棵深度为 k，且有 2k - 1 个节点称之为满二叉树<br><img src="http://7xl5dr.com1.z0.glb.clouddn.com/full%C2%A0binary%C2%A0tree.png" alt=""></p>
+<p>完全二叉树：深度为 k，有 n 个节点的二叉树，当且仅当其每一个节点都与深度为 k 的满二叉树中序号为 1 至 n 的节点对应时，称之为完全二叉树<br><img src="http://7xl5dr.com1.z0.glb.clouddn.com/complete%C2%A0binary%C2%A0tree.png" alt=""></p>
+<h2 id="什么是堆"><a href="#什么是堆" class="headerlink" title="什么是堆"></a>什么是堆</h2><p>堆（二叉堆）可以视为一棵完全的二叉树，完全二叉树的一个“优秀”的性质是，除了最底层之外，每一层都是满的，这使得堆可以利用数组来表示（普通的一般的二叉树通常用链表作为基本容器表示），每一个结点对应数组中的一个元素。</p>
+<p>二叉堆一般分为两种：最大堆和最小堆。<br>最大堆：<br>最大堆中的最大元素值出现在根结点（堆顶）<br>堆中每个父节点的元素值都大于等于其孩子结点（如果存在）</p>
+<p>最小堆：<br>最小堆中的最小元素值出现在根结点（堆顶）<br>堆中每个父节点的元素值都小于等于其孩子结点（如果存在）</p>
+<h2 id="堆排序原理"><a href="#堆排序原理" class="headerlink" title="堆排序原理"></a>堆排序原理</h2><p>堆排序就是把最大堆堆顶的最大数取出，将剩余的堆继续调整为最大堆，再次将堆顶的最大数取出，这个过程持续到剩余数只有一个时结束。<br>在堆中定义以下几种操作：<br>最大堆调整（Max-Heapify）：将堆的末端子节点作调整，使得子节点永远小于父节点<br>创建最大堆（Build-Max-Heap）：将堆所有数据重新排序，使其成为最大堆<br>堆排序（Heap-Sort）：移除位在第一个数据的根节点，并做最大堆调整的递归运算</p>
 
       
     </div>
@@ -383,6 +420,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构与算法/" rel="tag"># 数据结构与算法</a>
+          
+            <a href="/tags/排序算法/" rel="tag"># 排序算法</a>
+          
+            <a href="/tags/二叉树/" rel="tag"># 二叉树</a>
+          
+        </div>
+      
 
       
       
@@ -392,8 +439,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/06/Mac-OS下Maven的安装与配置/" rel="next" title="Mac OS下Maven的安装与配置">
-                <i class="fa fa-chevron-left"></i> Mac OS下Maven的安装与配置
+              <a href="/2016/07/22/单例模式-Singleton-Pattern-的6种实现/" rel="next" title="单例模式(Singleton Pattern)的6种实现">
+                <i class="fa fa-chevron-left"></i> 单例模式(Singleton Pattern)的6种实现
               </a>
             
           </div>
@@ -401,6 +448,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/28/Mac修改MySQL密码/" rel="prev" title="Mac上重置MySQL密码">
+                Mac上重置MySQL密码 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -572,7 +623,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#堆排序介绍"><span class="nav-number">1.</span> <span class="nav-text">堆排序介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先说说二叉树"><span class="nav-number">2.</span> <span class="nav-text">先说说二叉树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是堆"><span class="nav-number">3.</span> <span class="nav-text">什么是堆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#堆排序原理"><span class="nav-number">4.</span> <span class="nav-text">堆排序原理</span></a></li></ol></div>
             
 
           </div>
